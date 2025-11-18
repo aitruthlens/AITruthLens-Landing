@@ -53,10 +53,38 @@
   <section class="signup container">
     <h2>Join the Early Beta</h2>
     <p>Get notified when AI TruthLens is ready.</p>
-    <form class="email-form">
-      <input type="email" placeholder="Your email address" required />
-      <button type="submit">Notify Me</button>
-    </form>
+<form action="https://api.web3forms.com/submit" method="POST" class="email-form">
+
+  <!-- Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="0deb37f4-4ea9-408b-b169-8b0822faadf7">
+
+  <!-- Redirect to same page with ?success=true -->
+  <input type="hidden" name="redirect" value="https://aitruthlens.org?success=true">
+
+  <!-- Email Input -->
+  <input 
+    type="email" 
+    name="email" 
+    placeholder="Your email address"
+    required
+  />
+
+  <button type="submit">Join Waitlist</button>
+</form>
+
+<!-- Success Message -->
+<p id="success-message" style="display:none; color:green; margin-top:10px;">
+  🎉 You're officially on the waitlist!
+</p>
+
+<script>
+  // Show success message when redirected with ?success=true
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("success") === "true") {
+    document.getElementById("success-message").style.display = "block";
+  }
+</script>
+
   </section>
 
   <footer>
@@ -66,4 +94,5 @@
 
 </body>
 </html>
+
 
