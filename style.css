@@ -13,57 +13,18 @@ body {
   padding: 0 1.4rem;
 }
 
-/* HERO SECTION */
+/* HERO BANNER — FULL WIDTH, NO OVERLAY, NO CROPPING */
 .hero {
-  position: relative;
-  background: url('https://images.unsplash.com/photo-1557683311-eac922347aa1?auto=format&q=80&w=2000') center/cover no-repeat;
-  padding: 9rem 1.5rem 7rem;
-  text-align: center;
-  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-  backdrop-filter: blur(3px);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 5;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.4rem;
-  font-weight: 700;
-}
-
-.tagline {
-  font-size: 1.6rem;
-  opacity: 0.9;
-}
-
-.subtext {
-  max-width: 650px;
-  margin: 1rem auto 2rem;
-  opacity: 0.85;
-  font-size: 1.15rem;
-}
-
-.cta {
-  background: #66fcf1;
-  padding: 0.9rem 1.6rem;
-  border-radius: 8px;
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.cta:hover {
-  background: #45e0d6;
+.hero-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid #0b0c10;
 }
 
 /* ABOUT */
@@ -72,10 +33,27 @@ body {
   text-align: center;
 }
 
+.about h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #66fcf1;
+}
+
+.about p {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
 /* HOW IT WORKS */
 .how {
   margin-top: 3.5rem;
   text-align: center;
+}
+
+.how h2 {
+  margin-bottom: 1rem;
+  color: #66fcf1;
 }
 
 .steps {
@@ -112,6 +90,10 @@ body {
 .signup {
   margin: 3rem auto;
   text-align: center;
+}
+
+.signup h2 {
+  color: #66fcf1;
 }
 
 .email-form {
@@ -159,5 +141,4 @@ footer a {
   color: #66fcf1;
   text-decoration: none;
 }
-
 
