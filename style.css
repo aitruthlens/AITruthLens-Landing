@@ -14,11 +14,26 @@ body {
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #0b0c10, #1f2833);
+  position: relative;
+  background: url('assets/hero-banner.png') center/cover no-repeat;
   color: #fff;
   text-align: center;
-  padding: 5rem 1rem 6rem;
+  padding: 7rem 1rem 7rem;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* dark overlay so text is readable */
+  backdrop-filter: blur(3px);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
 
 .hero h1 {
   font-size: 3rem;
@@ -140,3 +155,4 @@ footer a {
   color: #66fcf1;
   text-decoration: none;
 }
+
