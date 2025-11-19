@@ -1,55 +1,55 @@
+/* GLOBAL */
 body {
   margin: 0;
   font-family: 'Inter', Arial, sans-serif;
-  background: #f6f7f9;
-  color: #111;
+  background: #0e0f11;
+  color: #fff;
   line-height: 1.6;
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.4rem;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
   position: relative;
-  background: url('assets/hero-banner.png') center/cover no-repeat;
-  color: #fff;
+  background: url('https://images.unsplash.com/photo-1557683311-eac922347aa1?auto=format&q=80&w=2000') center/cover no-repeat;
+  padding: 9rem 1.5rem 7rem;
   text-align: center;
-  padding: 14rem 1rem 6rem;
+  color: #fff;
 }
 
-.hero::before {
-  content: "";
+.overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55); /* dark overlay so text is readable */
+  background: rgba(0,0,0,0.55);
   backdrop-filter: blur(3px);
 }
 
-.hero .container {
+.hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
-
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
 }
 
 .tagline {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   opacity: 0.9;
 }
 
 .subtext {
-  font-size: 1.1rem;
   max-width: 650px;
   margin: 1rem auto 2rem;
   opacity: 0.85;
+  font-size: 1.15rem;
 }
 
 .cta {
@@ -59,7 +59,7 @@ body {
   color: #000;
   font-weight: bold;
   text-decoration: none;
-  transition: 0.2s ease-in-out;
+  font-size: 1rem;
 }
 
 .cta:hover {
@@ -74,7 +74,7 @@ body {
 
 /* HOW IT WORKS */
 .how {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   text-align: center;
 }
 
@@ -82,28 +82,30 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   flex-wrap: wrap;
 }
 
 .step {
-  background: #fff;
+  background: #1b1d21;
   padding: 1.4rem;
   border-radius: 12px;
   width: 180px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  border: 1px solid #2a2d33;
 }
 
 .step span {
   display: block;
-  background: #1f2833;
-  color: #fff;
+  background: #66fcf1;
+  color: #000;
   width: 36px;
   height: 36px;
   line-height: 36px;
   border-radius: 50%;
   margin: 0 auto 0.7rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* SIGNUP */
@@ -122,23 +124,25 @@ body {
 
 .email-form input {
   padding: 0.8rem;
-  width: 250px;
+  width: 260px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: none;
+  outline: none;
 }
 
 .email-form button {
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 6px;
-  background: #0b0c10;
-  color: #fff;
+  background: #66fcf1;
+  color: #000;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  font-weight: 600;
+  transition: 0.2s ease;
 }
 
 .email-form button:hover {
-  background: #1f2833;
+  background: #45e0d6;
 }
 
 /* FOOTER */
@@ -155,6 +159,5 @@ footer a {
   color: #66fcf1;
   text-decoration: none;
 }
-
 
 
