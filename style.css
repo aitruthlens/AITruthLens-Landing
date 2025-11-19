@@ -18,7 +18,7 @@ body {
   background: url('assets/hero-banner.png') center/cover no-repeat;
   color: #fff;
   text-align: center;
-  padding: 7rem 1rem 7rem;
+  padding: 11rem 1rem 6rem;
 }
 
 .hero::before {
@@ -155,4 +155,5 @@ footer a {
   color: #66fcf1;
   text-decoration: none;
 }
+
 
