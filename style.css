@@ -184,3 +184,52 @@ footer a {
   text-decoration: none;
 }
 
+/* FEATURES SECTION */
+.features {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.features h2 {
+  color: #66fcf1;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.8rem;
+}
+
+.feature-card {
+  background: #1b1d21;
+  border: 1px solid #2a2d33;
+  padding: 1.8rem 1.4rem;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+.icon {
+  font-size: 2.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.feature-card h3 {
+  color: #66fcf1;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.feature-card p {
+  color: #ccc;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
