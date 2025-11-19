@@ -233,3 +233,46 @@ footer a {
   line-height: 1.45;
 }
 
+/* WHY IT MATTERS SECTION */
+.why {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.why h2 {
+  color: #66fcf1;
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+.why-content {
+  background: #1b1d21;
+  border: 1px solid #2a2d33;
+  padding: 2.5rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.why-content p {
+  color: #ddd;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+}
+
+.why-highlight {
+  margin-top: 1.8rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  background: #0e0f11;
+  border-left: 4px solid #66fcf1;
+  border-right: 4px solid #66fcf1;
+  border-radius: 10px;
+  color: #66fcf1;
+}
+
