@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TruthLens API — Getting Started</title>
+  <link rel="stylesheet" href="api.css">
+</head>
+<body>
+<div class="docs-shell">
+
+  <!-- SIDEBAR -->
+  <aside class="docs-sidebar">
+    <div class="docs-logo">TruthLens API</div>
+
+    <nav class="docs-nav">
+      <h4>Overview</h4>
+      <ul>
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="getting-started.html" class="active">Getting Started</a></li>
+      </ul>
+
+      <h4>Core</h4>
+      <ul>
+        <li><a href="authentication.html">Authentication</a></li>
+        <li><a href="endpoints.html">Endpoints</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="docs-main">
+    <h1>Getting Started</h1>
+
+    <p>
+      Welcome to the TruthLens AI Detection API. This guide will walk you through the basics of making your first detection request.
+    </p>
+
+    <h2>Step 1 — Get Your API Key</h2>
+    <p>
+      API keys will be available soon. During preview, contact:  
+      <a href="mailto:adamfisher@aitruthlens.org">adamfisher@aitruthlens.org</a>
+    </p>
+
+    <h2>Step 2 — Make Your First Request</h2>
+    <pre><code>
+curl https://api.aitruthlens.org/v1/detect/image \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"image_url": "https://example.com/photo.jpg"}'
+    </code></pre>
+
+    <h2>Step 3 — Read the Response</h2>
+    <pre><code>
+{
+  "type": "image",
+  "label": "likely_ai",
+  "confidence": 0.91,
+  "provider": "AI TruthLens",
+  "raw": { ... }
+}
+    </code></pre>
+
+    <div class="docs-footer">
+      © 2025 AI TruthLens — Getting Started Guide
+    </div>
+  </main>
+
+</div>
+</body>
+</html>
