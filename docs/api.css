@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #0b0c10;
+  color: #f5f5f5;
+}
+
+a {
+  color: #66fcf1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.docs-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.docs-sidebar {
+  width: 240px;
+  background: #08090c;
+  border-right: 1px solid #171920;
+  padding: 1.5rem 1.1rem;
+}
+
+.docs-logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #66fcf1;
+  margin-bottom: 1.5rem;
+}
+
+.docs-nav h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-bottom: 0.4rem;
+}
+
+.docs-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.docs-nav li {
+  margin-bottom: 0.3rem;
+}
+
+.docs-nav a {
+  font-size: 0.92rem;
+  color: #ddd;
+}
+
+.docs-nav a.active {
+  color: #66fcf1;
+  font-weight: 600;
+}
+
+.docs-main {
+  flex: 1;
+  padding: 2rem 2.2rem;
+  max-width: 900px;
+}
+
+.docs-main h1 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  color: #66fcf1;
+}
+
+.docs-main h2 {
+  font-size: 1.3rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.4rem;
+  color: #f5f5f5;
+}
+
+.docs-main p {
+  font-size: 0.98rem;
+  color: #ddd;
+  max-width: 700px;
+}
+
+.docs-main pre {
+  background: #050608;
+  border-radius: 8px;
+  border: 1px solid #232630;
+  padding: 1rem;
+  font-family: "SF Mono", "Consolas", "Menlo", monospace;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  margin-top: 0.6rem;
+  margin-bottom: 1.3rem;
+}
+
+.docs-main code {
+  font-family: "SF Mono", "Consolas", "Menlo", monospace;
+  font-size: 0.9rem;
+}
+
+.docs-chip {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid #66fcf1;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-left: 0.4rem;
+}
+
+.docs-footer {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .docs-shell {
+    flex-direction: column;
+  }
+
+  .docs-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #171920;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .docs-main {
+    padding: 1.6rem 1.4rem;
+  }
+}
