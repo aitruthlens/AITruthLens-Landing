@@ -42,6 +42,7 @@ body {
   display: flex;
   gap: 1.2rem;
   font-size: 0.95rem;
+  align-items: center;
 }
 
 .nav-links a {
@@ -53,6 +54,22 @@ body {
 .nav-links a:hover {
   opacity: 1;
   color: #66fcf1;
+}
+
+.nav-link-api {
+  border-bottom: 1px dashed #66fcf1;
+}
+
+.nav-download-btn {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #66fcf1;
+  font-size: 0.9rem;
+}
+
+.nav-download-btn.disabled {
+  opacity: 0.6;
+  cursor: default;
 }
 
 /* HERO BANNER — FULL WIDTH, NO OVERLAY, NO CROPPING */
@@ -274,5 +291,356 @@ footer a {
   border-right: 4px solid #66fcf1;
   border-radius: 10px;
   color: #66fcf1;
+}
+
+/* SCREENSHOTS */
+.screenshots {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.screenshots h2 {
+  color: #66fcf1;
+  font-size: 2rem;
+}
+
+.screenshots-sub {
+  color: #ccc;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+}
+
+.shot-card {
+  background: #1b1d21;
+  border-radius: 14px;
+  border: 1px solid #2a2d33;
+  padding: 1rem;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.35);
+}
+
+.shot-card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.shot-caption {
+  margin-top: 0.7rem;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+/* TRUSTED BY SECTION */
+.trusted {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.trusted h2 {
+  color: #66fcf1;
+  font-size: 2rem;
+}
+
+.trusted-sub {
+  color: #ccc;
+  max-width: 600px;
+  margin: 0.5rem auto 1.5rem;
+}
+
+.trusted-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.trusted-tag {
+  border-radius: 999px;
+  border: 1px solid #2a2d33;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  background: #15171b;
+  color: #eee;
+}
+
+.trusted-note {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* DOWNLOAD SECTION */
+.download {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.download h2 {
+  color: #66fcf1;
+  font-size: 2rem;
+}
+
+.download p {
+  color: #ddd;
+  max-width: 650px;
+  margin: 0.5rem auto 1.5rem;
+}
+
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.download-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 200px;
+  padding: 0.9rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid #2a2d33;
+  background: #15171b;
+  color: #f5f5f5;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.download-btn.primary {
+  border-color: #66fcf1;
+}
+
+.download-btn.secondary {
+  border-color: #30333b;
+}
+
+.download-btn:hover:not(.disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 24px rgba(0,0,0,0.55);
+  border-color: #66fcf1;
+}
+
+.download-btn.disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.download-title {
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.download-note {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.download-hint {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* API SECTION */
+.api-section {
+  margin-top: 4.2rem;
+}
+
+.api-section h2 {
+  color: #66fcf1;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.api-sub {
+  color: #ddd;
+  max-width: 650px;
+  margin: 0.6rem auto 2rem;
+  text-align: center;
+}
+
+.api-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.3rem;
+  margin-bottom: 1.8rem;
+}
+
+.api-card {
+  background: #15171b;
+  border-radius: 12px;
+  border: 1px solid #262933;
+  padding: 1.4rem 1.2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.35);
+}
+
+.api-card h3 {
+  color: #66fcf1;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.api-card p {
+  color: #ccc;
+  font-size: 0.94rem;
+}
+
+.api-cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.api-docs-btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  background: #66fcf1;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.96rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.api-docs-btn:hover {
+  background: #45e0d6;
+  transform: translateY(-2px);
+}
+
+.api-badge {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid #66fcf1;
+  color: #66fcf1;
+}
+
+.api-sample {
+  background: #0b0c10;
+  border-radius: 10px;
+  border: 1px solid #262933;
+  padding: 1.2rem 1rem;
+  font-family: "SF Mono", "Consolas", "Menlo", monospace;
+  font-size: 0.85rem;
+  color: #e0e0e0;
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.code-comment {
+  color: #66fcf1;
+}
+
+/* IDEAS / QUESTIONS SECTION */
+.ideas {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.ideas h2 {
+  color: #66fcf1;
+  font-size: 2rem;
+}
+
+.ideas p {
+  color: #ddd;
+  max-width: 620px;
+  margin: 0.5rem auto 1.5rem;
+}
+
+.ideas-form {
+  background: #1b1d21;
+  border-radius: 12px;
+  border: 1px solid #2c2f38;
+  padding: 1.6rem 1.4rem;
+  max-width: 650px;
+  margin: 0 auto;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+}
+
+.ideas-row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+
+.ideas-row input {
+  flex: 1;
+  min-width: 150px;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.ideas-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  resize: vertical;
+  min-height: 100px;
+  margin-bottom: 0.8rem;
+}
+
+.ideas-form button {
+  padding: 0.8rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  background: #66fcf1;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.ideas-form button:hover {
+  background: #45e0d6;
+  transform: translateY(-1px);
+}
+
+.ideas-note {
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .nav-download-btn {
+    display: none;
+  }
+
+  .api-cta-row {
+    flex-direction: column;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ideas-row {
+    flex-direction: column;
+  }
 }
 
