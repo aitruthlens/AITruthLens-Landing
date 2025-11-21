@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TruthLens API — Endpoints</title>
+  <link rel="stylesheet" href="api.css">
+</head>
+<body>
+<div class="docs-shell">
+
+  <!-- SIDEBAR -->
+  <aside class="docs-sidebar">
+    <div class="docs-logo">TruthLens API</div>
+
+    <nav class="docs-nav">
+      <h4>Overview</h4>
+      <ul>
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="getting-started.html">Getting Started</a></li>
+      </ul>
+
+      <h4>Core</h4>
+      <ul>
+        <li><a href="authentication.html">Authentication</a></li>
+        <li><a href="endpoints.html" class="active">Endpoints</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="docs-main">
+    <h1>API Endpoints</h1>
+
+    <p>
+      The TruthLens AI Detection API includes three main detection endpoints: image, text, and video frames.
+    </p>
+
+    <h2>1. Detect Image</h2>
+    <pre><code>
+POST /v1/detect/image
+
+{
+  "image_url": "https://example.com/photo.jpg"
+}
+    </code></pre>
+
+    <h2>2. Detect Text</h2>
+    <pre><code>
+POST /v1/detect/text
+
+{
+  "text": "Hello world"
+}
+    </code></pre>
+
+    <h2>3. Detect Video (Frame Sampling)</h2>
+    <pre><code>
+POST /v1/detect/video
+
+{
+  "video_url": "https://example.com/video.mp4",
+  "sample_rate": 1
+}
+    </code></pre>
+
+    <p>
+      The API returns:
+    </p>
+
+    <pre><code>
+{
+  "type": "image",
+  "label": "likely_ai",
+  "confidence": 0.87,
+  "provider": "AI TruthLens",
+  "raw": { ... }
+}
+    </code></pre>
+
+    <div class="docs-footer">
+      © 2025 AI TruthLens — Endpoints
+    </div>
+  </main>
+
+</div>
+</body>
+</html>
