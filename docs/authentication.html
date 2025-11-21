@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TruthLens API — Authentication</title>
+  <link rel="stylesheet" href="api.css">
+</head>
+<body>
+<div class="docs-shell">
+
+  <!-- SIDEBAR -->
+  <aside class="docs-sidebar">
+    <div class="docs-logo">TruthLens API</div>
+
+    <nav class="docs-nav">
+      <h4>Overview</h4>
+      <ul>
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="getting-started.html">Getting Started</a></li>
+      </ul>
+
+      <h4>Core</h4>
+      <ul>
+        <li><a href="authentication.html" class="active">Authentication</a></li>
+        <li><a href="endpoints.html">Endpoints</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="docs-main">
+    <h1>Authentication</h1>
+
+    <p>
+      The TruthLens API uses simple Bearer token authentication. You send your API key in the HTTP 
+      <code>Authorization</code> header.
+    </p>
+
+    <h2>Header Format</h2>
+    <pre><code>
+Authorization: Bearer YOUR_API_KEY
+    </code></pre>
+
+    <h2>Example</h2>
+    <pre><code>
+curl https://api.aitruthlens.org/v1/detect/text \
+  -H "Authorization: Bearer sk_test_123456" \
+  -H "Content-Type: application/json" \
+  -d '{"text": "The quick brown fox jumps over the lazy dog"}'
+    </code></pre>
+
+    <p>
+      If your key is missing or invalid, the API returns:
+    </p>
+
+    <pre><code>
+{
+  "error": "unauthorized"
+}
+    </code></pre>
+
+    <div class="docs-footer">
+      © 2025 AI TruthLens — Authentication
+    </div>
+  </main>
+
+</div>
+</body>
+</html>
